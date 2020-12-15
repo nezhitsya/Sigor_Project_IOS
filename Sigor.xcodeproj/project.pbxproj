@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B21FA8925885ECB00E7FC5B /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B21FA8825885ECB00E7FC5B /* DatabaseManager.swift */; };
+		0B21FA8D25885FAA00E7FC5B /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B21FA8C25885FA900E7FC5B /* AuthManager.swift */; };
+		0B21FA902588602D00E7FC5B /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B21FA8F2588602D00E7FC5B /* StorageManager.swift */; };
+		0B21FAA72588659900E7FC5B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B21FAA62588659900E7FC5B /* Extensions.swift */; };
 		0B75FCE12588444D00C382D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B75FCE02588444D00C382D2 /* AppDelegate.swift */; };
 		0B75FCE32588444D00C382D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B75FCE22588444D00C382D2 /* SceneDelegate.swift */; };
 		0B75FCE52588444D00C382D2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B75FCE42588444D00C382D2 /* HomeViewController.swift */; };
@@ -27,9 +31,16 @@
 		0B75FD25258847C200C382D2 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B75FD24258847C200C382D2 /* SearchResultViewController.swift */; };
 		0B75FD28258847F500C382D2 /* PostEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B75FD27258847F500C382D2 /* PostEditorViewController.swift */; };
 		0B75FD2B2588481200C382D2 /* PublishPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B75FD2A2588481200C382D2 /* PublishPostViewController.swift */; };
+		0B75FD2F2588553500C382D2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B75FD2E2588553500C382D2 /* GoogleService-Info.plist */; };
+		D5ECD1C115DF757C9C31D923 /* Pods_Sigor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AF80E249A5F2DB62F464C9 /* Pods_Sigor.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05AF80E249A5F2DB62F464C9 /* Pods_Sigor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sigor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B21FA8825885ECB00E7FC5B /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		0B21FA8C25885FA900E7FC5B /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		0B21FA8F2588602D00E7FC5B /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		0B21FAA62588659900E7FC5B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		0B75FCDD2588444D00C382D2 /* Sigor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sigor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B75FCE02588444D00C382D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B75FCE22588444D00C382D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,6 +63,9 @@
 		0B75FD24258847C200C382D2 /* SearchResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		0B75FD27258847F500C382D2 /* PostEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditorViewController.swift; sourceTree = "<group>"; };
 		0B75FD2A2588481200C382D2 /* PublishPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishPostViewController.swift; sourceTree = "<group>"; };
+		0B75FD2E2588553500C382D2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B0CB8F2C9AC81476C40282FB /* Pods-Sigor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sigor.debug.xcconfig"; path = "Target Support Files/Pods-Sigor/Pods-Sigor.debug.xcconfig"; sourceTree = "<group>"; };
+		BF8155A2A5263004124908CB /* Pods-Sigor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sigor.release.xcconfig"; path = "Target Support Files/Pods-Sigor/Pods-Sigor.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,17 +73,35 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5ECD1C115DF757C9C31D923 /* Pods_Sigor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B21FA8725885B9500E7FC5B /* General */ = {
+			isa = PBXGroup;
+			children = (
+				0B75FD152588475800C382D2 /* PostViewController.swift */,
+				0B75FD182588477C00C382D2 /* EditProfileViewController.swift */,
+				0B75FD1B2588478A00C382D2 /* SettingsViewController.swift */,
+				0B75FD1E2588479E00C382D2 /* ListViewController.swift */,
+				0B75FD21258847B200C382D2 /* SearchViewController.swift */,
+				0B75FD24258847C200C382D2 /* SearchResultViewController.swift */,
+				0B75FD27258847F500C382D2 /* PostEditorViewController.swift */,
+				0B75FD2A2588481200C382D2 /* PublishPostViewController.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
 		0B75FCD42588444D00C382D2 = {
 			isa = PBXGroup;
 			children = (
 				0B75FCDF2588444D00C382D2 /* Sigor */,
 				0B75FCDE2588444D00C382D2 /* Products */,
+				B5CB11E579DD9A40D03AE82E /* Pods */,
+				60125FBCC3C7ED07D468CAD9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,8 +153,13 @@
 		0B75FCF82588448200C382D2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0B75FD2E2588553500C382D2 /* GoogleService-Info.plist */,
 				0B75FCE02588444D00C382D2 /* AppDelegate.swift */,
 				0B75FCE22588444D00C382D2 /* SceneDelegate.swift */,
+				0B21FA8825885ECB00E7FC5B /* DatabaseManager.swift */,
+				0B21FA8C25885FA900E7FC5B /* AuthManager.swift */,
+				0B21FA8F2588602D00E7FC5B /* StorageManager.swift */,
+				0B21FAA62588659900E7FC5B /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -151,15 +188,8 @@
 		0B75FD0D258846E800C382D2 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				0B21FA8725885B9500E7FC5B /* General */,
 				0B75FD0E258846EF00C382D2 /* Onboarding */,
-				0B75FD152588475800C382D2 /* PostViewController.swift */,
-				0B75FD182588477C00C382D2 /* EditProfileViewController.swift */,
-				0B75FD1B2588478A00C382D2 /* SettingsViewController.swift */,
-				0B75FD1E2588479E00C382D2 /* ListViewController.swift */,
-				0B75FD21258847B200C382D2 /* SearchViewController.swift */,
-				0B75FD24258847C200C382D2 /* SearchResultViewController.swift */,
-				0B75FD27258847F500C382D2 /* PostEditorViewController.swift */,
-				0B75FD2A2588481200C382D2 /* PublishPostViewController.swift */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -173,6 +203,23 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		60125FBCC3C7ED07D468CAD9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05AF80E249A5F2DB62F464C9 /* Pods_Sigor.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5CB11E579DD9A40D03AE82E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B0CB8F2C9AC81476C40282FB /* Pods-Sigor.debug.xcconfig */,
+				BF8155A2A5263004124908CB /* Pods-Sigor.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -180,9 +227,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0B75FCF12588444E00C382D2 /* Build configuration list for PBXNativeTarget "Sigor" */;
 			buildPhases = (
+				E7CB9E3941437E38ED659555 /* [CP] Check Pods Manifest.lock */,
 				0B75FCD92588444D00C382D2 /* Sources */,
 				0B75FCDA2588444D00C382D2 /* Frameworks */,
 				0B75FCDB2588444D00C382D2 /* Resources */,
+				A53A0D943F2EAF90298B3DCC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,12 +280,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B75FCED2588444E00C382D2 /* LaunchScreen.storyboard in Resources */,
+				0B75FD2F2588553500C382D2 /* GoogleService-Info.plist in Resources */,
 				0B75FCEA2588444E00C382D2 /* Assets.xcassets in Resources */,
 				0B75FCE82588444D00C382D2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A53A0D943F2EAF90298B3DCC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sigor/Pods-Sigor-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sigor/Pods-Sigor-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sigor/Pods-Sigor-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7CB9E3941437E38ED659555 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sigor-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0B75FCD92588444D00C382D2 /* Sources */ = {
@@ -250,12 +342,16 @@
 				0B75FD002588461700C382D2 /* CameraViewController.swift in Sources */,
 				0B75FD032588462E00C382D2 /* NotificationViewController.swift in Sources */,
 				0B75FD28258847F500C382D2 /* PostEditorViewController.swift in Sources */,
+				0B21FA902588602D00E7FC5B /* StorageManager.swift in Sources */,
 				0B75FD162588475800C382D2 /* PostViewController.swift in Sources */,
+				0B21FA8925885ECB00E7FC5B /* DatabaseManager.swift in Sources */,
 				0B75FCE52588444D00C382D2 /* HomeViewController.swift in Sources */,
 				0B75FD25258847C200C382D2 /* SearchResultViewController.swift in Sources */,
 				0B75FD102588470F00C382D2 /* LoginViewController.swift in Sources */,
+				0B21FAA72588659900E7FC5B /* Extensions.swift in Sources */,
 				0B75FD22258847B200C382D2 /* SearchViewController.swift in Sources */,
 				0B75FD082588465200C382D2 /* ProfileViewController.swift in Sources */,
+				0B21FA8D25885FAA00E7FC5B /* AuthManager.swift in Sources */,
 				0B75FCE12588444D00C382D2 /* AppDelegate.swift in Sources */,
 				0B75FCE32588444D00C382D2 /* SceneDelegate.swift in Sources */,
 				0B75FD1F2588479E00C382D2 /* ListViewController.swift in Sources */,
@@ -403,6 +499,7 @@
 		};
 		0B75FCF22588444E00C382D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0CB8F2C9AC81476C40282FB /* Pods-Sigor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -421,6 +518,7 @@
 		};
 		0B75FCF32588444E00C382D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF8155A2A5263004124908CB /* Pods-Sigor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

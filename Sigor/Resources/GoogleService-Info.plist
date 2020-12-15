@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>589865892773-m9pu60v38i22veaog1cpgil0e5rr3uer.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.589865892773-m9pu60v38i22veaog1cpgil0e5rr3uer</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>589865892773-no6m0s9ht4m5t06t1tbit2p22fqbnrfr.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCHG9NH46co1OzV3fJOfhGG-JoceVQAia8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>589865892773</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.Sigor</string>
+	<key>PROJECT_ID</key>
+	<string>sigor-1dc3c</string>
+	<key>STORAGE_BUCKET</key>
+	<string>sigor-1dc3c.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:589865892773:ios:68f3397d7d68ffc383464c</string>
+	<key>DATABASE_URL</key>
+	<string>https://sigor-1dc3c.firebaseio.com</string>
+</dict>
+</plist>
