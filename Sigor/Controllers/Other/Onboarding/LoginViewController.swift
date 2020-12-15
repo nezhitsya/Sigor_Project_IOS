@@ -166,15 +166,15 @@ class LoginViewController: UIViewController {
     }
     
     private func configureHeaderView() {
-        guard headerView.subviews.count == 1 else {
-            return
-        }
+//        guard headerView.subviews.count == 1 else {
+//            return
+//        }
         
-        guard let backgroundView = headerView.subviews.first else {
-            return
-        }
+//        guard let backgroundView = headerView.subviews.first else {
+//            return
+//        }
         
-        backgroundView.frame = headerView.bounds
+//        backgroundView.frame = headerView.bounds
         
         // Add sigor logo
         let imageView = UIImageView(image: UIImage(named: "Logo"))
