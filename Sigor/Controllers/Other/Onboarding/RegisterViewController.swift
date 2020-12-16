@@ -15,7 +15,7 @@ class RegisterViewController: UIViewController {
     
     private let usernameField: UITextField = {
         let field = UITextField()
-        field.placeholder = "E-mail"
+        field.placeholder = "Username"
         field.returnKeyType = .next
         field.leftViewMode = .always
         field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 0))
@@ -31,7 +31,7 @@ class RegisterViewController: UIViewController {
     
     private let emailField: UITextField = {
         let field = UITextField()
-        field.placeholder = "Username"
+        field.placeholder = "E-mail"
         field.returnKeyType = .next
         field.leftViewMode = .always
         field.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 0))
