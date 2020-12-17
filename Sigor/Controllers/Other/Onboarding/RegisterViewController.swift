@@ -137,9 +137,9 @@ extension RegisterViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if textField == usernameField {
             emailField.becomeFirstResponder()
-        } else if textField == emailField (
+        } else if textField == emailField {
             passwordField.becomeFirstResponder()
-        ) else {
+        } else {
             didTapRegister()
         }
         return true
