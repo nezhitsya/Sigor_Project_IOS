@@ -19,6 +19,7 @@
 		0B2B26CE258AEB7C00D25DDA /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2B26CD258AEB7C00D25DDA /* PhotoCollectionViewCell.swift */; };
 		0B2B26D1258AEBCC00D25DDA /* ProfileInfoHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2B26D0258AEBCC00D25DDA /* ProfileInfoHeaderCollectionReusableView.swift */; };
 		0B2B26D4258AEC0500D25DDA /* ProfileTabsCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2B26D3258AEC0500D25DDA /* ProfileTabsCollectionReusableView.swift */; };
+		0B2B26EC258B011700D25DDA /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2B26EB258B011700D25DDA /* Models.swift */; };
 		0B75FCE12588444D00C382D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B75FCE02588444D00C382D2 /* AppDelegate.swift */; };
 		0B75FCE32588444D00C382D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B75FCE22588444D00C382D2 /* SceneDelegate.swift */; };
 		0B75FCE52588444D00C382D2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B75FCE42588444D00C382D2 /* HomeViewController.swift */; };
@@ -57,6 +58,7 @@
 		0B2B26CD258AEB7C00D25DDA /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		0B2B26D0258AEBCC00D25DDA /* ProfileInfoHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfoHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		0B2B26D3258AEC0500D25DDA /* ProfileTabsCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTabsCollectionReusableView.swift; sourceTree = "<group>"; };
+		0B2B26EB258B011700D25DDA /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		0B75FCDD2588444D00C382D2 /* Sigor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sigor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B75FCE02588444D00C382D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B75FCE22588444D00C382D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 		0B75FCF72588447D00C382D2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0B2B26EB258B011700D25DDA /* Models.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 				0B2B26C1258AD12500D25DDA /* IGFeedPostHeaderTableViewCell.swift in Sources */,
 				0B75FD28258847F500C382D2 /* PostEditorViewController.swift in Sources */,
 				0B21FA902588602D00E7FC5B /* StorageManager.swift in Sources */,
+				0B2B26EC258B011700D25DDA /* Models.swift in Sources */,
 				0B2B26CA258AE0FA00D25DDA /* FormTableViewCell.swift in Sources */,
 				0B75FD162588475800C382D2 /* PostViewController.swift in Sources */,
 				0B2B26D4258AEC0500D25DDA /* ProfileTabsCollectionReusableView.swift in Sources */,
