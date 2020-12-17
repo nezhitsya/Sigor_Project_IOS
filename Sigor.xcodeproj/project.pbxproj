@@ -11,6 +11,10 @@
 		0B21FA8D25885FAA00E7FC5B /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B21FA8C25885FA900E7FC5B /* AuthManager.swift */; };
 		0B21FA902588602D00E7FC5B /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B21FA8F2588602D00E7FC5B /* StorageManager.swift */; };
 		0B21FAA72588659900E7FC5B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B21FAA62588659900E7FC5B /* Extensions.swift */; };
+		0B2B26BD258ACF8600D25DDA /* IGFeedPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2B26BC258ACF8600D25DDA /* IGFeedPostTableViewCell.swift */; };
+		0B2B26C1258AD12500D25DDA /* IGFeedPostHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2B26C0258AD12500D25DDA /* IGFeedPostHeaderTableViewCell.swift */; };
+		0B2B26C4258AD14000D25DDA /* IGFeedPostActionsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2B26C3258AD14000D25DDA /* IGFeedPostActionsTableViewCell.swift */; };
+		0B2B26C7258AD16400D25DDA /* IGFeedPostGeneralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B2B26C6258AD16400D25DDA /* IGFeedPostGeneralTableViewCell.swift */; };
 		0B75FCE12588444D00C382D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B75FCE02588444D00C382D2 /* AppDelegate.swift */; };
 		0B75FCE32588444D00C382D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B75FCE22588444D00C382D2 /* SceneDelegate.swift */; };
 		0B75FCE52588444D00C382D2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B75FCE42588444D00C382D2 /* HomeViewController.swift */; };
@@ -41,6 +45,10 @@
 		0B21FA8C25885FA900E7FC5B /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		0B21FA8F2588602D00E7FC5B /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		0B21FAA62588659900E7FC5B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		0B2B26BC258ACF8600D25DDA /* IGFeedPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostTableViewCell.swift; sourceTree = "<group>"; };
+		0B2B26C0258AD12500D25DDA /* IGFeedPostHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		0B2B26C3258AD14000D25DDA /* IGFeedPostActionsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostActionsTableViewCell.swift; sourceTree = "<group>"; };
+		0B2B26C6258AD16400D25DDA /* IGFeedPostGeneralTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGFeedPostGeneralTableViewCell.swift; sourceTree = "<group>"; };
 		0B75FCDD2588444D00C382D2 /* Sigor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sigor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B75FCE02588444D00C382D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B75FCE22588444D00C382D2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +103,25 @@
 			path = General;
 			sourceTree = "<group>";
 		};
+		0B2B26BB258ACF3900D25DDA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0B2B26BF258AD0EF00D25DDA /* HomeFeed */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		0B2B26BF258AD0EF00D25DDA /* HomeFeed */ = {
+			isa = PBXGroup;
+			children = (
+				0B2B26BC258ACF8600D25DDA /* IGFeedPostTableViewCell.swift */,
+				0B2B26C0258AD12500D25DDA /* IGFeedPostHeaderTableViewCell.swift */,
+				0B2B26C3258AD14000D25DDA /* IGFeedPostActionsTableViewCell.swift */,
+				0B2B26C6258AD16400D25DDA /* IGFeedPostGeneralTableViewCell.swift */,
+			);
+			path = HomeFeed;
+			sourceTree = "<group>";
+		};
 		0B75FCD42588444D00C382D2 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +164,7 @@
 		0B75FCF62588447900C382D2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0B2B26BB258ACF3900D25DDA /* Cells */,
 				0B75FCFA258844F000C382D2 /* Storyboars */,
 				0B75FCE92588444E00C382D2 /* Assets.xcassets */,
 			);
@@ -341,19 +369,23 @@
 				0B75FCFD258845F000C382D2 /* ExploreViewController.swift in Sources */,
 				0B75FD002588461700C382D2 /* CameraViewController.swift in Sources */,
 				0B75FD032588462E00C382D2 /* NotificationViewController.swift in Sources */,
+				0B2B26C1258AD12500D25DDA /* IGFeedPostHeaderTableViewCell.swift in Sources */,
 				0B75FD28258847F500C382D2 /* PostEditorViewController.swift in Sources */,
 				0B21FA902588602D00E7FC5B /* StorageManager.swift in Sources */,
 				0B75FD162588475800C382D2 /* PostViewController.swift in Sources */,
 				0B21FA8925885ECB00E7FC5B /* DatabaseManager.swift in Sources */,
 				0B75FCE52588444D00C382D2 /* HomeViewController.swift in Sources */,
+				0B2B26BD258ACF8600D25DDA /* IGFeedPostTableViewCell.swift in Sources */,
 				0B75FD25258847C200C382D2 /* SearchResultViewController.swift in Sources */,
 				0B75FD102588470F00C382D2 /* LoginViewController.swift in Sources */,
 				0B21FAA72588659900E7FC5B /* Extensions.swift in Sources */,
+				0B2B26C7258AD16400D25DDA /* IGFeedPostGeneralTableViewCell.swift in Sources */,
 				0B75FD22258847B200C382D2 /* SearchViewController.swift in Sources */,
 				0B75FD082588465200C382D2 /* ProfileViewController.swift in Sources */,
 				0B21FA8D25885FAA00E7FC5B /* AuthManager.swift in Sources */,
 				0B75FCE12588444D00C382D2 /* AppDelegate.swift in Sources */,
 				0B75FCE32588444D00C382D2 /* SceneDelegate.swift in Sources */,
+				0B2B26C4258AD14000D25DDA /* IGFeedPostActionsTableViewCell.swift in Sources */,
 				0B75FD1F2588479E00C382D2 /* ListViewController.swift in Sources */,
 				0B75FD1C2588478A00C382D2 /* SettingsViewController.swift in Sources */,
 			);
