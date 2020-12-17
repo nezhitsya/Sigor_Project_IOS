@@ -1,16 +1,19 @@
 {
   "images" : [
     {
+      "filename" : "스크린샷 2020-12-17 오전 10.53.52.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
+      "filename" : "스크린샷 2020-12-17 오전 10.57.22.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "20x20"
     },
     {
+      "filename" : "스크린샷 2020-12-17 오전 11.00.47.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "29x29"
@@ -21,21 +24,25 @@
       "size" : "29x29"
     },
     {
+      "filename" : "스크린샷 2020-12-17 오전 10.49.55.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
+      "filename" : "스크린샷 2020-12-17 오전 10.56.24.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "40x40"
     },
     {
+      "filename" : "스크린샷 2020-12-17 오전 10.56.24-1.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
+      "filename" : "스크린샷 2020-12-17 오전 10.57.59.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"
@@ -46,6 +53,7 @@
       "size" : "20x20"
     },
     {
+      "filename" : "스크린샷 2020-12-17 오전 10.53.52-1.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "20x20"
@@ -56,26 +64,31 @@
       "size" : "29x29"
     },
     {
+      "filename" : "스크린샷 2020-12-17 오전 11.00.06.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
+      "filename" : "스크린샷 2020-12-17 오전 10.53.52-2.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "40x40"
     },
     {
+      "filename" : "스크린샷 2020-12-17 오전 10.59.21.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
+      "filename" : "스크린샷 2020-12-17 오전 11.04.22.png",
       "idiom" : "ipad",
       "scale" : "1x",
       "size" : "76x76"
     },
     {
+      "filename" : "스크린샷 2020-12-17 오전 11.03.37.png",
       "idiom" : "ipad",
       "scale" : "2x",
       "size" : "76x76"
@@ -86,6 +99,7 @@
       "size" : "83.5x83.5"
     },
     {
+      "filename" : "스크린샷 2020-12-17 오전 11.02.52.png",
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"
