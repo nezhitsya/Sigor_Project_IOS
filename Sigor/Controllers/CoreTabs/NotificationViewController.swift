@@ -12,8 +12,10 @@ class NotificationViewController: UIViewController, UITableViewDelegate, UITable
     private let tableView: UITableView = {
         let tableView = UITableView()
         tableView.isHidden = false
-        tableView.register(UITableViewCell.self,
-                           forCellReuseIdentifier: "cell")
+        tableView.register(NotificationLikeEventTableViewCell.self,
+                           forCellReuseIdentifier: NotificationLikeEventTableViewCell.identifier)
+        tableView.register(NotificationFollowEventTableViewCell.self,
+                           forCellReuseIdentifier: NotificationFollowEventTableViewCell.identifier)
         return tableView
     }()
     
