@@ -42,6 +42,9 @@
 		0B75FD2B2588481200C382D2 /* PublishPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B75FD2A2588481200C382D2 /* PublishPostViewController.swift */; };
 		0B75FD2F2588553500C382D2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B75FD2E2588553500C382D2 /* GoogleService-Info.plist */; };
 		0BD01391258D7B0900C87891 /* UserFollowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD01390258D7B0900C87891 /* UserFollowTableViewCell.swift */; };
+		0BD01395258D8A1E00C87891 /* NoNotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD01394258D8A1E00C87891 /* NoNotificationsView.swift */; };
+		0BD01399258D8F0900C87891 /* NotificationFollowEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD01398258D8F0900C87891 /* NotificationFollowEventTableViewCell.swift */; };
+		0BD0139C258D8F2900C87891 /* NotificationLikeEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD0139B258D8F2900C87891 /* NotificationLikeEventTableViewCell.swift */; };
 		D5ECD1C115DF757C9C31D923 /* Pods_Sigor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AF80E249A5F2DB62F464C9 /* Pods_Sigor.framework */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +87,9 @@
 		0B75FD2A2588481200C382D2 /* PublishPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishPostViewController.swift; sourceTree = "<group>"; };
 		0B75FD2E2588553500C382D2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0BD01390258D7B0900C87891 /* UserFollowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFollowTableViewCell.swift; sourceTree = "<group>"; };
+		0BD01394258D8A1E00C87891 /* NoNotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoNotificationsView.swift; sourceTree = "<group>"; };
+		0BD01398258D8F0900C87891 /* NotificationFollowEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationFollowEventTableViewCell.swift; sourceTree = "<group>"; };
+		0BD0139B258D8F2900C87891 /* NotificationLikeEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationLikeEventTableViewCell.swift; sourceTree = "<group>"; };
 		B0CB8F2C9AC81476C40282FB /* Pods-Sigor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sigor.debug.xcconfig"; path = "Target Support Files/Pods-Sigor/Pods-Sigor.debug.xcconfig"; sourceTree = "<group>"; };
 		BF8155A2A5263004124908CB /* Pods-Sigor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sigor.release.xcconfig"; path = "Target Support Files/Pods-Sigor/Pods-Sigor.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -118,6 +124,7 @@
 		0B2B26BB258ACF3900D25DDA /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				0BD01397258D8EC600C87891 /* Notifications */,
 				0B2B26BF258AD0EF00D25DDA /* HomeFeed */,
 				0B2B26C9258AE0FA00D25DDA /* FormTableViewCell.swift */,
 				0B2B26CD258AEB7C00D25DDA /* PhotoCollectionViewCell.swift */,
@@ -192,6 +199,7 @@
 				0B2B26BB258ACF3900D25DDA /* Cells */,
 				0B75FCFA258844F000C382D2 /* Storyboars */,
 				0B75FCE92588444E00C382D2 /* Assets.xcassets */,
+				0BD01394258D8A1E00C87891 /* NoNotificationsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -255,6 +263,15 @@
 				0B75FD122588472800C382D2 /* RegisterViewController.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		0BD01397258D8EC600C87891 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				0BD01398258D8F0900C87891 /* NotificationFollowEventTableViewCell.swift */,
+				0BD0139B258D8F2900C87891 /* NotificationLikeEventTableViewCell.swift */,
+			);
+			path = Notifications;
 			sourceTree = "<group>";
 		};
 		60125FBCC3C7ED07D468CAD9 /* Frameworks */ = {
@@ -395,7 +412,9 @@
 				0B75FCFD258845F000C382D2 /* ExploreViewController.swift in Sources */,
 				0B75FD002588461700C382D2 /* CameraViewController.swift in Sources */,
 				0B75FD032588462E00C382D2 /* NotificationViewController.swift in Sources */,
+				0BD01395258D8A1E00C87891 /* NoNotificationsView.swift in Sources */,
 				0B2B26C1258AD12500D25DDA /* IGFeedPostHeaderTableViewCell.swift in Sources */,
+				0BD01399258D8F0900C87891 /* NotificationFollowEventTableViewCell.swift in Sources */,
 				0B75FD28258847F500C382D2 /* PostEditorViewController.swift in Sources */,
 				0B21FA902588602D00E7FC5B /* StorageManager.swift in Sources */,
 				0BD01391258D7B0900C87891 /* UserFollowTableViewCell.swift in Sources */,
@@ -411,6 +430,7 @@
 				0B75FD102588470F00C382D2 /* LoginViewController.swift in Sources */,
 				0B21FAA72588659900E7FC5B /* Extensions.swift in Sources */,
 				0B2B26C7258AD16400D25DDA /* IGFeedPostGeneralTableViewCell.swift in Sources */,
+				0BD0139C258D8F2900C87891 /* NotificationLikeEventTableViewCell.swift in Sources */,
 				0B75FD22258847B200C382D2 /* SearchViewController.swift in Sources */,
 				0B2B26D1258AEBCC00D25DDA /* ProfileInfoHeaderCollectionReusableView.swift in Sources */,
 				0B75FD082588465200C382D2 /* ProfileViewController.swift in Sources */,
