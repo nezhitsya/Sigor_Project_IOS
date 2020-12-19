@@ -65,4 +65,8 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
         // Go to profile of selected cell
         let model = data[indexPath.row]
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 75
+    }
 }
