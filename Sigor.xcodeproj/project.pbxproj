@@ -41,6 +41,7 @@
 		0B75FD28258847F500C382D2 /* PostEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B75FD27258847F500C382D2 /* PostEditorViewController.swift */; };
 		0B75FD2B2588481200C382D2 /* PublishPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B75FD2A2588481200C382D2 /* PublishPostViewController.swift */; };
 		0B75FD2F2588553500C382D2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B75FD2E2588553500C382D2 /* GoogleService-Info.plist */; };
+		0BD01391258D7B0900C87891 /* UserFollowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD01390258D7B0900C87891 /* UserFollowTableViewCell.swift */; };
 		D5ECD1C115DF757C9C31D923 /* Pods_Sigor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AF80E249A5F2DB62F464C9 /* Pods_Sigor.framework */; };
 /* End PBXBuildFile section */
 
@@ -82,6 +83,7 @@
 		0B75FD27258847F500C382D2 /* PostEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostEditorViewController.swift; sourceTree = "<group>"; };
 		0B75FD2A2588481200C382D2 /* PublishPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishPostViewController.swift; sourceTree = "<group>"; };
 		0B75FD2E2588553500C382D2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0BD01390258D7B0900C87891 /* UserFollowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFollowTableViewCell.swift; sourceTree = "<group>"; };
 		B0CB8F2C9AC81476C40282FB /* Pods-Sigor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sigor.debug.xcconfig"; path = "Target Support Files/Pods-Sigor/Pods-Sigor.debug.xcconfig"; sourceTree = "<group>"; };
 		BF8155A2A5263004124908CB /* Pods-Sigor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sigor.release.xcconfig"; path = "Target Support Files/Pods-Sigor/Pods-Sigor.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +121,7 @@
 				0B2B26BF258AD0EF00D25DDA /* HomeFeed */,
 				0B2B26C9258AE0FA00D25DDA /* FormTableViewCell.swift */,
 				0B2B26CD258AEB7C00D25DDA /* PhotoCollectionViewCell.swift */,
+				0BD01390258D7B0900C87891 /* UserFollowTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -395,6 +398,7 @@
 				0B2B26C1258AD12500D25DDA /* IGFeedPostHeaderTableViewCell.swift in Sources */,
 				0B75FD28258847F500C382D2 /* PostEditorViewController.swift in Sources */,
 				0B21FA902588602D00E7FC5B /* StorageManager.swift in Sources */,
+				0BD01391258D7B0900C87891 /* UserFollowTableViewCell.swift in Sources */,
 				0B2B26EC258B011700D25DDA /* Models.swift in Sources */,
 				0B2B26CA258AE0FA00D25DDA /* FormTableViewCell.swift in Sources */,
 				0B75FD162588475800C382D2 /* PostViewController.swift in Sources */,

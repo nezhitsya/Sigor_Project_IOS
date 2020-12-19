@@ -62,6 +62,7 @@ final class ProfileInfoHeaderCollectionReusableView: UICollectionReusableView {
         label.text = "name"
         label.textColor = .label
         label.numberOfLines = 1
+        label.font = .systemFont(ofSize: 17, weight: .semibold)
         return label
     }()
     
