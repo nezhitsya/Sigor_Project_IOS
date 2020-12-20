@@ -9,7 +9,7 @@ import UIKit
 
 enum UserNotificationType {
     case like(post: UserPost)
-    case follow
+    case follow(state: FollowState)
 }
 
 struct UserNotification {

@@ -64,8 +64,23 @@ class NotificationFollowEventTableViewCell: UITableViewCell {
         switch model.type {
         case .like(_) :
             break
-        case .follow:
+        case .follow(let state):
             // configure button
+            switch state {
+            case .following:
+                // show unfollow button
+                followButton.setTitle("Follow", for: .normal)
+                followButton.setTitleColor(.label, for: .normal)
+                followButton.layer.borderWidth = 1
+                followButton.layer.borderColor = UIColor.secondaryLabel.cgColor
+            case .follow:
+                // show follow button
+                followButton.setTitle("Following", for: .normal)
+                followButton.setTitleColor(.label, for: .normal)
+                followButton.layer.borderWidth = 0
+                followButton.layer.borderColor = UIColor.secondaryLabel.cgColor
+
+            }
             break
         }
         label.text = model.text
@@ -89,11 +104,11 @@ class NotificationFollowEventTableViewCell: UITableViewCell {
                                         height: contentView.height - 6)
         profileImageView.layer.cornerRadius = profileImageView.height/2
         
-        let size = contentView.height - 4
+        let size: CGFloat = 100
         followButton.frame = CGRect(x: contentView.width - size - 5,
-                                    y: 2,
+                                    y: (contentView.height - 44)/2,
                                     width: size,
-                                    height: size)
+                                    height: 40)
         label.frame = CGRect(x: profileImageView.right + 5,
                              y: 0,
                              width: contentView.width - size - profileImageView.width - 16,
