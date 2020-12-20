@@ -23,4 +23,8 @@ final class IGFeedPostTableViewCell: UITableViewCell {
         // configure the cell
         
     }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+    }
 }

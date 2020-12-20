@@ -42,6 +42,7 @@ public struct UserPost {
     let comments: [PostComment]
     let createdDate: Date
     let taggedUSers: [String]
+    let publisher: User
 }
 
 struct PostLikes {
