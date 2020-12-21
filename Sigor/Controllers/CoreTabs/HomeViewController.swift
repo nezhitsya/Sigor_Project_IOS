@@ -116,6 +116,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                 let cell = tableView.dequeueReusableCell(withIdentifier: IGFeedPostHeaderTableViewCell.identifier,
                                                          for: indexPath)
                     as! IGFeedPostHeaderTableViewCell
+                cell.delegate = self
                 cell.configure(with: user)
                 return cell
             case .comments, .actions, .primaryContent:
@@ -188,5 +189,27 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         let subSection = section % 4
         return subSection == 3 ? 70 : 0
+    }
+}
+
+extension HomeViewController: IGFeedPostHeaderTableViewCellDelegate {
+    func didTapMoreButton() {
+        let actionSheet = UIAlertController(title: "Post Options",
+                                            message: nil,
+                                            preferredStyle: .actionSheet)
+        actionSheet.addAction(UIAlertAction(title: "Report",
+                                            style: .destructive,
+                                            handler: {
+                                                [weak self] _ in
+                                                self?.reportPost()
+                                            }))
+        actionSheet.addAction(UIAlertAction(title: "Cancel",
+                                            style: .cancel,
+                                            handler: nil))
+        present(actionSheet, animated: true)
+    }
+    
+    func reportPost() {
+        
     }
 }
