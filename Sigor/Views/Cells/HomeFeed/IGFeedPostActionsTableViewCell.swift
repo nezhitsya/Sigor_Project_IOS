@@ -7,7 +7,15 @@
 
 import UIKit
 
+protocol IGFeedPostActionsTableViewCellDelegate: AnyObject {
+    func didTapLikeButton()
+    func didTapCommentButton()
+    func didTapSendButton()
+}
+
 class IGFeedPostActionsTableViewCell: UITableViewCell {
+    
+    weak var delegate: IGFeedPostActionsTableViewCellDelegate?
     
     static let identifier = "IGFeedPostActionsTableViewCell"
     
@@ -20,14 +28,14 @@ class IGFeedPostActionsTableViewCell: UITableViewCell {
     
     private let commentButton: UIButton = {
        let button = UIButton()
-        button.setImage(UIImage(systemName: "message"), for: .normal)
+        button.setImage(UIImage(systemName: "pencil"), for: .normal)
         button.tintColor = .label
         return button
     }()
     
     private let sendButton: UIButton = {
        let button = UIButton()
-        button.setImage(UIImage(systemName: "send"), for: .normal)
+        button.setImage(UIImage(systemName: "paperplane"), for: .normal)
         button.tintColor = .label
         return button
     }()
@@ -54,15 +62,15 @@ class IGFeedPostActionsTableViewCell: UITableViewCell {
     }
     
     @objc private func didTapLikeButton() {
-        
+        delegate?.didTapLikeButton()
     }
     
     @objc private func didTapCommentButton() {
-        
+        delegate?.didTapCommentButton()
     }
     
     @objc private func didTapSendButton() {
-        
+        delegate?.didTapSendButton()
     }
     
     public func configure(with post: UserPost) {
@@ -72,6 +80,15 @@ class IGFeedPostActionsTableViewCell: UITableViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
+        let buttonSize = contentView.height - 10
+        let button = [likeButton, commentButton, sendButton]
+        for x in 0..<button.count {
+            let button = button[x]
+            button.frame = CGRect(x: (CGFloat(x) * buttonSize) + (10 * CGFloat(x + 1)),
+                                  y: 5,
+                                  width: buttonSize,
+                                  height: buttonSize)
+        }
     }
     
     override func prepareForReuse() {
