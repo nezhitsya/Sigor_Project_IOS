@@ -11,7 +11,7 @@ enum Gender {
     case male, female, other
 }
 
-struct User {
+struct Users {
     let username: String
     let bio: String
     let name: String
@@ -33,20 +33,20 @@ public enum UserPostType: String {
     case video = "Video"
 }
 
-public struct UserPost {
+public struct Posts {
     let identifier: String
     let postType: UserPostType
     let thumbnailImage: URL
     let postURL: URL
     let caption: String?
-    let likeCount: [PostLikes]
-    let comments: [PostComment]
+    let likeCount: [Likes]
+    let comments: [Comments]
     let createdDate: Date
     let taggedUSers: [String]
-    let publisher: User
+    let publisher: Users
 }
 
-struct PostLikes {
+struct Likes {
     let username: String
     let postIdentifier: String
 }
@@ -56,7 +56,7 @@ struct CommentLikes {
     let commentIdentifier: String
 }
 
-struct PostComment {
+struct Comments {
     let identifier: String
     let username: String
     let text: String
