@@ -41,7 +41,7 @@ class PhotoCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    public func configure(with model: UserPost) {
+    public func configure(with model: Posts) {
         let url = model.thumbnailImage
         photoImageView.sd_setImage(with: url, completed: nil)
     }

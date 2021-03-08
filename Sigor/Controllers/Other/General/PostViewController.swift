@@ -8,10 +8,10 @@
 import UIKit
 
 enum PostRenderType {
-    case header(provider: User)
-    case primaryContent(provider: UserPost) // post
+    case header(provider: Users)
+    case primaryContent(provider: Posts) // post
     case actions(provider: String) // like, comment, share
-    case comments(comments: [PostComment])
+    case comments(comments: [Comments])
 }
 
 struct PostRenderViewModel {
@@ -20,7 +20,7 @@ struct PostRenderViewModel {
 
 class PostViewController: UIViewController {
     
-    private let model: UserPost?
+    private let model: Posts?
     
     private var renderModels = [PostRenderViewModel]()
     
@@ -39,7 +39,7 @@ class PostViewController: UIViewController {
         return tableView
     }()
     
-    init(model: UserPost?) {
+    init(model: Posts?) {
         self.model = model
         super.init(nibName: nil, bundle: nil)
     }

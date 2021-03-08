@@ -8,14 +8,14 @@
 import UIKit
 
 enum UserNotificationType {
-    case like(post: UserPost)
+    case like(post: Posts)
     case follow(state: FollowState)
 }
 
 struct UserNotification {
     let type: UserNotificationType
     let text: String
-    let user: User
+    let user: Users
 }
 
 final class NotificationViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {

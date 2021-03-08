@@ -79,7 +79,7 @@ class IGFeedPostActionsTableViewCell: UITableViewCell {
         delegate?.didTapSendButton()
     }
     
-    public func configure(with post: UserPost) {
+    public func configure(with post: Posts) {
         // configure the cell
         
     }

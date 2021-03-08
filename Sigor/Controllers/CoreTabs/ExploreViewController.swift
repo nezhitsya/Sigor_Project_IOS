@@ -16,7 +16,7 @@ class ExploreViewController: UIViewController {
         return searchBar
     }()
     
-    private var models = [UserPost]()
+    private var models = [Posts]()
     
     private var collectionView: UICollectionView?
     

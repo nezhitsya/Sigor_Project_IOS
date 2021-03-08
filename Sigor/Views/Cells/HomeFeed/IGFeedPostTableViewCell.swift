@@ -34,7 +34,7 @@ final class IGFeedPostTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    public func configure(with post: UserPost) {
+    public func configure(with post: Posts) {
         return
         switch post.postType {
         case .photo:
