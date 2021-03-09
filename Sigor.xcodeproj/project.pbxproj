@@ -45,6 +45,7 @@
 		0BD01395258D8A1E00C87891 /* NoNotificationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD01394258D8A1E00C87891 /* NoNotificationsView.swift */; };
 		0BD01399258D8F0900C87891 /* NotificationFollowEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD01398258D8F0900C87891 /* NotificationFollowEventTableViewCell.swift */; };
 		0BD0139C258D8F2900C87891 /* NotificationLikeEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BD0139B258D8F2900C87891 /* NotificationLikeEventTableViewCell.swift */; };
+		0BFA446A25F73E0300AC9033 /* UnderLineTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BFA446925F73E0300AC9033 /* UnderLineTextField.swift */; };
 		D5ECD1C115DF757C9C31D923 /* Pods_Sigor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05AF80E249A5F2DB62F464C9 /* Pods_Sigor.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +91,7 @@
 		0BD01394258D8A1E00C87891 /* NoNotificationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoNotificationsView.swift; sourceTree = "<group>"; };
 		0BD01398258D8F0900C87891 /* NotificationFollowEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationFollowEventTableViewCell.swift; sourceTree = "<group>"; };
 		0BD0139B258D8F2900C87891 /* NotificationLikeEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationLikeEventTableViewCell.swift; sourceTree = "<group>"; };
+		0BFA446925F73E0300AC9033 /* UnderLineTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderLineTextField.swift; sourceTree = "<group>"; };
 		B0CB8F2C9AC81476C40282FB /* Pods-Sigor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sigor.debug.xcconfig"; path = "Target Support Files/Pods-Sigor/Pods-Sigor.debug.xcconfig"; sourceTree = "<group>"; };
 		BF8155A2A5263004124908CB /* Pods-Sigor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sigor.release.xcconfig"; path = "Target Support Files/Pods-Sigor/Pods-Sigor.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -200,6 +202,7 @@
 				0B75FCFA258844F000C382D2 /* Storyboars */,
 				0B75FCE92588444E00C382D2 /* Assets.xcassets */,
 				0BD01394258D8A1E00C87891 /* NoNotificationsView.swift */,
+				0BFA446925F73E0300AC9033 /* UnderLineTextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				0B75FCE12588444D00C382D2 /* AppDelegate.swift in Sources */,
 				0B75FCE32588444D00C382D2 /* SceneDelegate.swift in Sources */,
 				0B2B26C4258AD14000D25DDA /* IGFeedPostActionsTableViewCell.swift in Sources */,
+				0BFA446A25F73E0300AC9033 /* UnderLineTextField.swift in Sources */,
 				0B75FD1F2588479E00C382D2 /* ListViewController.swift in Sources */,
 				0B75FD1C2588478A00C382D2 /* SettingsViewController.swift in Sources */,
 			);

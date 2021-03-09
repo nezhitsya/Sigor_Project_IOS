@@ -26,7 +26,7 @@ class LoginViewController: UIViewController {
         field.layer.cornerRadius = Constants.cornerRadius
         field.backgroundColor = .secondarySystemBackground
         field.layer.borderWidth = 1.0
-        field.layer.borderColor = UIColor.secondaryLabel.cgColor
+        field.layer.borderColor = UIColor.orange.cgColor
         return field
     }()
     
@@ -43,7 +43,7 @@ class LoginViewController: UIViewController {
         field.layer.cornerRadius = Constants.cornerRadius
         field.backgroundColor = .secondarySystemBackground
         field.layer.borderWidth = 1.0
-        field.layer.borderColor = UIColor.secondaryLabel.cgColor
+        field.layer.borderColor = UIColor.orange.cgColor
         return field
     }()
     
@@ -180,9 +180,9 @@ class LoginViewController: UIViewController {
         let imageView = UIImageView(image: UIImage(named: "Logo"))
         headerView.addSubview(imageView)
         imageView.contentMode = .scaleAspectFit
-        imageView.frame = CGRect(x: headerView.width/4.0,
+        imageView.frame = CGRect(x: headerView.width/3.0,
                                  y: view.safeAreaInsets.top,
-                                 width: headerView.width/2.0,
+                                 width: headerView.width/3.0,
                                  height: headerView.height - view.safeAreaInsets.top)
     }
     

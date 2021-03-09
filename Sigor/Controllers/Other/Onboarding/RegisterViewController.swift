@@ -13,8 +13,8 @@ class RegisterViewController: UIViewController {
         static let cornerRadius: CGFloat = 8.0
     }
     
-    private let usernameField: UITextField = {
-        let field = UITextField()
+    private let usernameField: UnderLineTextField = {
+        let field = UnderLineTextField()
         field.placeholder = "Username"
         field.returnKeyType = .next
         field.leftViewMode = .always
@@ -22,15 +22,11 @@ class RegisterViewController: UIViewController {
         field.autocapitalizationType = .none
         field.autocorrectionType = .no
         field.layer.masksToBounds = true
-        field.layer.cornerRadius = Constants.cornerRadius
-        field.backgroundColor = .secondarySystemBackground
-        field.layer.borderWidth = 1.0
-        field.layer.borderColor = UIColor.secondaryLabel.cgColor
         return field
     }()
     
-    private let emailField: UITextField = {
-        let field = UITextField()
+    private let emailField: UnderLineTextField = {
+        let field = UnderLineTextField()
         field.placeholder = "E-mail"
         field.returnKeyType = .next
         field.leftViewMode = .always
@@ -38,15 +34,11 @@ class RegisterViewController: UIViewController {
         field.autocapitalizationType = .none
         field.autocorrectionType = .no
         field.layer.masksToBounds = true
-        field.layer.cornerRadius = Constants.cornerRadius
-        field.backgroundColor = .secondarySystemBackground
-        field.layer.borderWidth = 1.0
-        field.layer.borderColor = UIColor.secondaryLabel.cgColor
         return field
     }()
     
-    private let passwordField: UITextField = {
-        let field = UITextField()
+    private let passwordField: UnderLineTextField = {
+        let field = UnderLineTextField()
         field.isSecureTextEntry = true
         field.placeholder = "Password"
         field.returnKeyType = .continue
@@ -55,10 +47,6 @@ class RegisterViewController: UIViewController {
         field.autocapitalizationType = .none
         field.autocorrectionType = .no
         field.layer.masksToBounds = true
-        field.layer.cornerRadius = Constants.cornerRadius
-        field.backgroundColor = .secondarySystemBackground
-        field.layer.borderWidth = 1.0
-        field.layer.borderColor = UIColor.secondaryLabel.cgColor
         return field
     }()
     
@@ -102,7 +90,7 @@ class RegisterViewController: UIViewController {
                                      width: view.width - 40,
                                      height: 52)
         registerButton.frame = CGRect(x: 20,
-                                      y: passwordField.bottom + 10,
+                                      y: passwordField.bottom + 50,
                                       width: view.width - 40,
                                       height: 52)
     }
