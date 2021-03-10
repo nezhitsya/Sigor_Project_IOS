@@ -48,6 +48,7 @@ IOS version of Sigor project
  <br>
 
 ### 프로필 화면
+프로필 편집 및 환경설정
 
 <div style="width:200px; height:150px; margin:auto">
   <img width="200" alt="1" src="https://user-images.githubusercontent.com/60697742/110567497-f7f36b00-8194-11eb-8d8a-6a6a8f937be7.png">
